@@ -1,14 +1,12 @@
 # SM-ViewAngle-Fix
 Normalizes out of bounds viewangles.
 
-#Installing
+## Installing
 If you wish to install this plugin, there's a few things one must do.
 
-1. Make sure you have SourceMod and ManiMod installed on your CS:GO server.
-2. Navigate to the "addons/sourcemod/scripting" folder.
-3. Place "SM-ViewAngle-Fix.sp" in the folder.
-4. Open a command prompt, navigate to the same folder using your OS equivalent of the "cd" command.
-5. Run the script compiler.
-6. Open the "compiled" folder, then move "SM-ViewAngle-Fix.smx" to your "addons/sourcemod/plugins" folder.
+1. Make sure you have SourceMod installed on your CS:GO server.
+3. Grab the newest SM-ViewAngle-Fix.smx from the [Releases section](https://github.com/sapphyrus/sm-viewangle-fix/releases).
+2. Navigate to the `csgo/addons/sourcemod/plugins` folder.
+3. Place "SM-ViewAngle-Fix.smx" in the folder.
 7. If the server is running, load the plugin or restart it.
 8. You're all set!
