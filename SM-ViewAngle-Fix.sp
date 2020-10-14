@@ -23,9 +23,7 @@ public Plugin:myinfo =
 
 public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:angles[3], &weapon, &subtype, &cmdnum, &tickcount, &seed, mouse[2])
 {
-	new bool:alive = IsPlayerAlive(client);
-
-	if (!alive) {
+	if (!IsPlayerAlive(client)) {
 		return Plugin_Continue;
 	}
 
@@ -37,10 +35,20 @@ public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:ang
 		angles[0] = -89.0;
 	}
 
-	angles[1] = angles[1] % 360;
+	if (angles[1] > 180 || angles[1] < -180) {
+		float flRevolutions = angles[1] / 360;
 
-	if (angles[1] > 180.0) {
-		angles[1] -= 360.0;
+		if (flRevolutions < 0) {
+			flRevolutions = -flRevolutions;
+		}
+
+		int iRevolutions = RoundToFloor(flRevolutions);
+
+		if (angles[1] < 0) {
+			angles[1] += iRevolutions * 360;
+		} else {
+			angles[1] -= iRevolutions * 360;
+		}
 	}
 
 	if (angles[2] != 0.0) {
