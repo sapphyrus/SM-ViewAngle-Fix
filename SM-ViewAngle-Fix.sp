@@ -1,7 +1,7 @@
 /*
 SM-ViewAngle-Fix
 
-Copyright (C) 2016 Alvy Piper
+Copyright (C) 2016 Alvy Piper / 2020 sapphyrus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -15,10 +15,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 public Plugin:myinfo = 
 { 
 	name = "ViewAngle Fix", 
-	author = "Alvy Piper", 
+	author = "Alvy Piper / sapphyrus", 
 	description = "Normalizes out of bounds viewangles", 
 	version = "0.2", 
-	url = "github.com/AlvyPiper/" 
+	url = "github.com/sapphyrus/" 
 };
 
 public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:angles[3], &weapon, &subtype, &cmdnum, &tickcount, &seed, mouse[2])
