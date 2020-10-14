@@ -1,5 +1,5 @@
 # SM-ViewAngle-Fix
-Normalizes out of bounds viewangles and hackily "fixes" teleport. This was only tested on official maps, so use this at your own risk.
+Normalizes out of bounds viewangles.
 
 #Installing
 If you wish to install this plugin, there's a few things one must do.
