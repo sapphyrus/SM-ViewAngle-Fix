@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #include <sourcemod>
 
-public Plugin:myinfo = 
+public Plugin myinfo = 
 { 
 	name = "ViewAngle Fix", 
 	author = "Alvy Piper / sapphyrus", 
